@@ -254,4 +254,46 @@ a {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #050505;
+  color: #f5f5f5;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-inner {
+  display: grid;
+  gap: 18px;
+  place-items: center;
+}
+
+.wordmark {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 600;
+  letter-spacing: 0.45rem;
+  text-transform: lowercase;
+}
+
+.divider {
+  width: clamp(120px, 20vw, 240px);
+  height: 1px;
+  background: #f5f5f5;
+  opacity: 0.7;
+}
+
+.subtitle {
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  opacity: 0.75;
 }
