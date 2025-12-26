@@ -1,1 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Website — Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">MW</div>
+        <div class="brand-title">My Website</div>
+      </div>
+      <nav class="nav">
+        <a class="active" href="index.html">Home page</a>
+        <a href="main-page.html">Main page</a>
+        <a href="custom-orders.html">Custom Orders</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Home page</h1>
+
+    <div class="link-list">
+      <a href="main-page.html">Items in stock</a>
+      <a href="custom-orders.html">Custom orders</a>
+    </div>
+
+    <div class="footer">© <span id="y"></span> My Website</div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
