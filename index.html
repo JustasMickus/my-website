@@ -3,38 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Website — Home</title>
+  <title>Main Page</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="header-inner">
-      <div class="brand">
-        <div class="logo">MW</div>
-        <div class="brand-title">My Website</div>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="avatar"></div>
+        <div class="brand-name">BigZ</div>
       </div>
       <nav class="nav">
-        <a class="active" href="index.html">Home page</a>
-        <a href="main-page.html">Main page</a>
-        <a href="custom-orders.html">Custom Orders</a>
+        <a class="nav-item is-active" href="index.html">Home page</a>
+        <a class="nav-item" href="main-page.html">Main page</a>
       </nav>
-    </div>
-  </header>
+      <div class="sidebar-footer">
+        <div class="bubble"></div>
+      </div>
+    </aside>
 
-  <main class="container">
-    <h1>Home page</h1>
+    <main class="content">
+      <div class="content-header">
+        <h1>Main Page</h1>
+        <button class="search" aria-label="Search"></button>
+      </div>
+      <p class="disclaimer">All products are replicas, when buying you accept this fact.</p>
 
-    <div class="link-list">
-      <a href="main-page.html">Items in stock</a>
-      <a href="custom-orders.html">Custom orders</a>
-    </div>
+      <div class="divider"></div>
+      <a class="button" href="main-page.html">Items in stock</a>
+      <div class="divider"></div>
 
-    <div class="footer">© <span id="y"></span> My Website</div>
-  </main>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+      <div class="community">
+        <div class="community-card">
+          <h2>Our Lithuanian comunity</h2>
+          <a class="button wide" href="https://discord.gg/EwbMkFsJ">&gt;&gt;&gt;Order here&lt;&lt;&lt;</a>
+          <div class="discord-icon"></div>
+        </div>
+        <div class="community-card">
+          <h2>Our English comunity</h2>
+          <a class="button wide" href="https://discord.gg/EwbMkFsJ">&gt;&gt;&gt;Order here&lt;&lt;&lt;</a>
+          <div class="discord-icon"></div>
+        </div>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
-
