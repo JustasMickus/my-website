@@ -1,1 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Website — Custom Orders</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">MW</div>
+        <div class="brand-title">My Website</div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home page</a>
+        <a href="main-page.html">Main page</a>
+        <a class="active" href="custom-orders.html">Custom Orders</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Custom orders</h1>
+    <a class="back" href="main-page.html">&lt;--- Go back to Main page</a>
+
+    <p>
+      Here you can add products that are not in stock. Leave images as placeholders now and replace later.
+    </p>
+
+    <div style="display:grid; gap:14px; margin-top:12px;">
+      <div class="card item">
+        <div class="img-ph">IMAGE PLACEHOLDER</div>
+        <div>
+          <h2>Product Name #1</h2>
+          <div class="meta">Quantity price:
+1 - 15€
+3+ - 10€</div>
+          <p><a href="#">>>Choose style<<</a></p>
+        </div>
+      </div>
+
+      <div class="card item">
+        <div class="img-ph">IMAGE PLACEHOLDER</div>
+        <div>
+          <h2>Product Name #2</h2>
+          <div class="meta">Quantity price:
+1 - 40€
+3+ - 35€</div>
+          <p><a href="#">>>Choose style<<</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">© <span id="y"></span> My Website</div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
