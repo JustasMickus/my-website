@@ -116,6 +116,17 @@ a {
   align-items: center;
 }
 
+.content--center {
+
+.content {
+  flex: 1;
+  padding: 28px 48px 40px;
+  background: #0c0f12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .content-header {
   width: 100%;
   display: flex;
@@ -140,6 +151,121 @@ a {
   border: none;
   cursor: pointer;
 }
+
+.search::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #f1f1f1;
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+}
+
+.search::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  background: #f1f1f1;
+  transform: rotate(45deg);
+  right: 4px;
+  bottom: 8px;
+}
+
+.disclaimer {
+  margin: 32px 0 18px;
+  font-size: 14px;
+  color: #cfd2d6;
+}
+
+.back-row {
+  width: 100%;
+  max-width: 860px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+
+.divider {
+  width: min(860px, 80%);
+  height: 1px;
+  background: #f1f1f1;
+  opacity: 0.7;
+  margin: 18px 0;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 40px;
+  border: 1px solid #cfd2d6;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #e6e8ea;
+  background: transparent;
+}
+
+.back-button {
+  padding: 6px 28px;
+}
+
+.button.wide {
+  width: 100%;
+  max-width: 420px;
+}
+
+.section {
+  width: 100%;
+  max-width: 860px;
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 26px;
+  justify-items: center;
+}
+
+.button-grid .button {
+  width: 100%;
+  max-width: 220px;
+  padding: 6px 18px;
+  font-size: 13px;
+}
+
+.community {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.community-card {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+.community-card h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 
 .search::after {
   content: "";
@@ -253,6 +379,16 @@ a {
   .community {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .divider,
+  .back-row,
+  .section {
+    width: 100%;
+  }
+
+  .button-grid {
+    grid-template-columns: 1fr;
   }
   height: 100%;
 }
